@@ -1,7 +1,7 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 
 :root {
-  /* BACKGROUND COLORS */
+  /* DODGER BLUE BACKGROUND COLORS */
   --bg: #1E90FF;
   --bg2: #187bd6; 
   --bg3: #146ebd; 
@@ -11,12 +11,12 @@
   --border-hover: rgba(255,255,255,0.4);
   
   --text: #ffffff;
-  --text2: #e0f0ff;
-  --text3: #b0d4ff;
+  --text2: #e0f0ff; 
+  --text3: #b0d4ff; 
   
   --violet: #ffffff; 
   --violet2: #ffffff;
-  --teal: #00ffcc;
+  --teal: #00ffcc; 
   --teal2: #00ffcc;
 }
 
@@ -48,9 +48,9 @@ a { color: inherit; text-decoration: none; }
 /* GRID BG */
 body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px); background-size: 60px 60px; pointer-events: none; z-index: 0; }
 
-/* NAV */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 2rem; height: 60px; display: flex; justify-content: space-between; align-items: center; background: rgba(109, 129, 150, 0.8); backdrop-filter: blur(20px); border-bottom: 0.5px solid var(--border); transition: all 0.3s; }
-nav.scrolled { background: rgba(109, 129, 150, 0.95); }
+/* NAV - UPDATED TO BLUE (30, 144, 255) */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 2rem; height: 60px; display: flex; justify-content: space-between; align-items: center; background: rgba(30, 144, 255, 0.8); backdrop-filter: blur(20px); border-bottom: 0.5px solid var(--border); transition: all 0.3s; }
+nav.scrolled { background: rgba(30, 144, 255, 0.95); }
 .nav-logo { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--violet2); letter-spacing: 0.05em; font-weight: bold; }
 .nav-links { display: flex; gap: 2rem; align-items: center; }
 .nav-links a { font-size: 13px; color: var(--text2); transition: color 0.2s; position: relative; }
@@ -75,7 +75,7 @@ section { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padd
 .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-family: 'DM Mono', monospace; font-size: 11px; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2rem; font-weight: bold; }
 .hero-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--teal); }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--teal); animation: pulse 2s infinite; }
-@keyframes pulse { 0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(100,255,218,0.4);} 50%{opacity:0.7;box-shadow:0 0 0 5px rgba(100,255,218,0);} }
+@keyframes pulse { 0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,255,204,0.4);} 50%{opacity:0.7;box-shadow:0 0 0 5px rgba(0,255,204,0);} }
 .hero h1 { font-size: clamp(2.4rem,6vw,4rem); font-weight: 300; line-height: 1.15; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
 .hero h1 em { font-style: normal; background: linear-gradient(135deg, #ffffff, var(--teal2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 #typed-text { border-right: 2px solid var(--violet2); padding-right: 3px; animation: blink 0.8s infinite; }
@@ -120,7 +120,7 @@ h2 { font-size: 1.8rem; font-weight: 600; margin-bottom: 2.5rem; letter-spacing:
 .project-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; }
 .project-name { font-size: 15px; font-weight: 600; }
 .project-badges { display: flex; gap: 6px; }
-.project-badge { font-family: 'DM Mono', monospace; font-size: 10px; padding: 3px 8px; border-radius: 4px; background: rgba(100,255,218,0.15); border: 0.5px solid rgba(100,255,218,0.3); color: var(--teal2); }
+.project-badge { font-family: 'DM Mono', monospace; font-size: 10px; padding: 3px 8px; border-radius: 4px; background: rgba(0,255,204,0.15); border: 0.5px solid rgba(0,255,204,0.3); color: var(--teal2); }
 .project-desc { font-size: 13px; color: var(--text2); margin-bottom: 1.25rem; line-height: 1.8; font-weight: 400; }
 .project-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.25rem; }
 .stack-tag { font-family: 'DM Mono', monospace; font-size: 11px; padding: 3px 10px; border-radius: 4px; background: rgba(255,255,255,0.1); border: 0.5px solid rgba(255,255,255,0.2); color: var(--text); }
