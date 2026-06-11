@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachin Parashar — AI & ML Engineer</title>
+  <meta name="description" content="AI & ML undergraduate building intelligent, production-ready applications. Open to internships.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div id="preloader-name">sachin.parashar</div>
+    <div id="preloader-bar"><div id="preloader-fill"></div></div>
+  </div>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="progress"></div>
+
+  <div id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+  <div id="toast"></div>
+
+  <nav id="navbar">
+    <span class="nav-logo">sachin.parashar</span>
+    <div class="nav-links">
+      <a href="#about" data-section="about">About</a>
+      <a href="#timeline" data-section="timeline">Journey</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#skills" data-section="skills">Skills</a>
+      <a href="#certifications" data-section="certifications">Certifications</a>
+      <a href="#contact" data-section="contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-eyebrow reveal"><span class="status-dot"></span> available for internships</div>
+    <h1 class="reveal reveal-delay-1">Building<br><em><span id="typed-text"></span></em><br>from scratch.</h1>
+    <p class="hero-desc reveal reveal-delay-2">AI & ML undergraduate turning research-grade ideas into deployed, production-ready applications — using LLMs, Python, and a lot of trial and error.</p>
+    <div class="hero-actions reveal reveal-delay-3">
+      <button class="btn-main" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View my work</button>
+      <button class="btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in touch</button>
+    </div>
+    <div class="hero-stats reveal">
+      <div><div class="stat-num" data-count="2">0</div><div class="stat-label">deployed apps</div></div>
+      <div><div class="stat-num" data-count="2">0</div><div class="stat-label">certifications</div></div>
+      <div><div class="stat-num">7th</div><div class="stat-label">semester</div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="about">
+    <h2 class="reveal">About</h2>
+    <div class="about-layout reveal">
+      <div class="about-body">
+        <p>I'm <strong>Sachin Parashar</strong>, a 7th semester B.Tech student in <strong>Artificial Intelligence & Machine Learning</strong> at AKGEC, Ghaziabad.</p>
+        <p>I don't just study AI — I build with it. My projects go from idea to GitHub to live Streamlit deployment. I care about code that actually works in the real world, not just in notebooks.</p>
+        <p>Outside of my coursework, I'm currently learning SQL, exploring new LLM tooling, and actively looking for my first professional internship.</p>
+      </div>
+      <div class="info-list">
+        <div class="info-item"><span class="info-dot"></span><span class="info-label">degree</span><span class="info-val">B.Tech AI & ML</span></div>
+        <div class="info-item"><span class="info-dot"></span><span class="info-label">college</span><span class="info-val">AKGEC, Ghaziabad</span></div>
+        <div class="info-item"><span class="info-dot"></span><span class="info-label">batch</span><span class="info-val">2023 – 2027</span></div>
+        <div class="info-item"><span class="info-dot"></span><span class="info-label">location</span><span class="info-val">Ghaziabad, India</span></div>
+        <div class="info-item"><span class="info-dot"></span><span class="info-label">status</span><span class="info-val" style="color:var(--teal2);">open to internships</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="timeline">
+    <h2 class="reveal">Journey</h2>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-title">Started B.Tech in AI & ML at AKGEC</div>
+        <div class="timeline-desc">Began the journey into Artificial Intelligence and Machine Learning.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2024</div>
+        <div class="timeline-title">Built & deployed NextWatch AI</div>
+        <div class="timeline-desc">First production ML app — content-based movie recommender on TMDB dataset, deployed on Streamlit Cloud.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2025</div>
+        <div class="timeline-title">Built & deployed HireSense.AI</div>
+        <div class="timeline-desc">LLM-powered ATS resume analyzer using Groq API and LLaMA 3.3 70B. Full modular codebase, PDF report generator, Streamlit Cloud deployment.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Jun 2026</div>
+        <div class="timeline-title">AWS & Databricks Certifications</div>
+        <div class="timeline-desc">Completed Foundations of Prompt Engineering (AWS) and Generative AI Fundamentals (Databricks).</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="projects">
+    <h2 class="reveal">Featured Projects</h2>
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">all</button>
+      <button class="filter-btn" data-filter="llm">llm</button>
+      <button class="filter-btn" data-filter="ml">ml</button>
+      <button class="filter-btn" data-filter="deployed">deployed</button>
+    </div>
+
+    <div class="project-item reveal" data-tags="llm deployed">
+      <div class="project-meta">
+        <div class="project-name">HireSense.AI — Smart ATS Resume Optimizer</div>
+        <div class="project-badges"><span class="project-badge">live</span></div>
+      </div>
+      <p class="project-desc">An LLM-powered ATS resume analyzer using Groq API and LLaMA 3.3 70B. Produces a 100-point composite score via dual heuristic + LLM scoring, and exports a branded PDF report with score rings, skill badges, and rewrite suggestions in under 10 seconds.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span><span class="stack-tag">Streamlit</span><span class="stack-tag">Groq API</span><span class="stack-tag">LLaMA 3.3 70B</span><span class="stack-tag">ReportLab</span><span class="stack-tag">pypdf</span>
+      </div>
+      <div class="project-links-row">
+        <a class="project-link" href="https://github.com/SACHIN0280/HireSense.AI" target="_blank">GitHub</a>
+        <a class="project-link" href="#" target="_blank">Live Demo</a>
+      </div>
+      <div class="project-highlight"><strong>Highlight:</strong> Deterministic JSON pipeline (temperature=0, seed=42) ensures consistent scoring. @st.cache_data memoization reduces token usage by up to 100% on repeated inputs.</div>
+    </div>
+
+    <div class="project-item reveal" data-tags="ml deployed">
+      <div class="project-meta">
+        <div class="project-name">NextWatch AI — Movie Recommendation System</div>
+        <div class="project-badges"><span class="project-badge">live</span></div>
+      </div>
+      <p class="project-desc">Content-based recommender on TMDB dataset of 5,000+ movies. Combines genres, cast, crew, keywords, and overview into a unified feature vector. CountVectorizer + cosine similarity delivers accurate top-5 recommendations with real-time poster fetching.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span><span class="stack-tag">Scikit-learn</span><span class="stack-tag">Pandas</span><span class="stack-tag">NumPy</span><span class="stack-tag">Streamlit</span><span class="stack-tag">TMDB API</span>
+      </div>
+      <div class="project-links-row">
+        <a class="project-link" href="https://github.com/SACHIN0280/NextWatch-AI" target="_blank">GitHub</a>
+        <a class="project-link" href="#" target="_blank">Live Demo</a>
+      </div>
+      <div class="project-highlight"><strong>Highlight:</strong> 80% reduction in user search time. Cleaned and processed 5,000+ records with Pandas for reliable recommendations.</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="skills">
+    <h2 class="reveal">Technical Skills</h2>
+    <div class="skills-layout reveal">
+      <div class="skill-block">
+        <div class="skill-block-title">Languages</div>
+        <div class="skill-pills"><span class="skill-pill">Python</span><span class="skill-pill">SQL</span></div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block-title">AI & ML</div>
+        <div class="skill-pills"><span class="skill-pill">Scikit-learn</span><span class="skill-pill">Pandas</span><span class="skill-pill">NumPy</span><span class="skill-pill">Matplotlib</span><span class="skill-pill">LLMs</span><span class="skill-pill">Prompt Eng.</span><span class="skill-pill">Generative AI</span></div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block-title">Tools</div>
+        <div class="skill-pills"><span class="skill-pill">Streamlit</span><span class="skill-pill">Groq API</span><span class="skill-pill">ReportLab</span><span class="skill-pill">Git</span><span class="skill-pill">GitHub</span><span class="skill-pill">Colab</span><span class="skill-pill">REST APIs</span></div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-block-title">Concepts</div>
+        <div class="skill-pills"><span class="skill-pill">NLP</span><span class="skill-pill">Cosine Similarity</span><span class="skill-pill">Feature Eng.</span><span class="skill-pill">Data Preprocessing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="certifications">
+    <h2 class="reveal">Certifications</h2>
+    <div class="cert-row reveal">
+      <div class="cert-logo">AWS</div>
+      <div>
+        <div class="cert-name">Foundations of Prompt Engineering</div>
+        <div class="cert-issuer">AWS Training & Certification — Jun 2026</div>
+        <ul class="cert-bullets">
+          <li>Zero-shot, few-shot, and chain-of-thought prompting techniques</li>
+          <li>LLM behavior, instruction tuning, and deterministic output design</li>
+          <li>Jailbreaking risks and safe, production-ready LLM pipeline practices</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cert-row reveal">
+      <div class="cert-logo">DB</div>
+      <div>
+        <div class="cert-name">Generative AI Fundamentals</div>
+        <div class="cert-issuer">Databricks Academy — Jun 2026</div>
+        <ul class="cert-bullets">
+          <li>LLMs, diffusion models, and transformer architectures</li>
+          <li>Enterprise GenAI — text generation, summarization, fine-tuning</li>
+          <li>Model evaluation and responsible AI practices</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="contact">
+    <h2 class="reveal">Contact</h2>
+    <div class="contact-layout reveal">
+      <div>
+        <p class="contact-intro">I'm actively looking for AI/ML internship opportunities. If you're working on something interesting or know of an opening, I'd genuinely love to hear from you.</p>
+        <div class="contact-items">
+          <a class="contact-item" href="mailto:s.parashar2806@gmail.com"><span class="contact-item-icon">✉</span>s.parashar2806@gmail.com</a>
+          <a class="contact-item" href="https://linkedin.com/in/sachin-parashar-94499b137" target="_blank"><span class="contact-item-icon">in</span>LinkedIn Profile</a>
+          <a class="contact-item" href="https://github.com/SACHIN0280" target="_blank"><span class="contact-item-icon">⌥</span>github.com/SACHIN0280</a>
+          <a class="contact-item" href="sachin01_resume.pdf" target="_blank"><span class="contact-item-icon">↓</span>Download Resume (PDF)</a>
+        </div>
+      </div>
+      
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="name" id="cf-name" placeholder="Your name" required>
+        <input type="email" name="email" id="cf-email" placeholder="Your email" required>
+        <textarea name="message" id="cf-msg" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn-main" id="cf-submit">Send message</button>
+      </form>
+      
+    </div>
+  </section>
+
+  <footer>© 2026 Sachin Parashar — AI & ML Undergraduate, AKGEC Ghaziabad</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
