@@ -1,23 +1,23 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 
 :root {
-  /* NEW SLATE GRAY BACKGROUND COLORS */
-  --bg: #6D8196;
-  --bg2: #5A6B7D; 
-  --bg3: #4B5A6B; 
+  /* BACKGROUND COLORS */
+  --bg: #1E90FF;
+  --bg2: #187bd6; 
+  --bg3: #146ebd; 
   
   --surface: rgba(255,255,255,0.08);
   --border: rgba(255,255,255,0.15);
   --border-hover: rgba(255,255,255,0.4);
   
   --text: #ffffff;
-  --text2: #e2e8f0; 
-  --text3: #cbd5e1; 
+  --text2: #e0f0ff;
+  --text3: #b0d4ff;
   
   --violet: #ffffff; 
   --violet2: #ffffff;
-  --teal: #64ffda; 
-  --teal2: #64ffda;
+  --teal: #00ffcc;
+  --teal2: #00ffcc;
 }
 
 html { scroll-behavior: smooth; }
