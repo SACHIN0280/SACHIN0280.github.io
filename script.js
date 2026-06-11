@@ -178,7 +178,7 @@ contactForm.addEventListener('submit', async function(e) {
     // -------------------------------------------------------------
     // IMPORTANT: REPLACE 'YOUR_FORMSPREE_ID_HERE' BELOW WITH YOUR ACTUAL ID
     // -------------------------------------------------------------
-    const response = await fetch('https://formspree.io/f/mjgdelpq', {
+    const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID_HERE', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -208,4 +208,23 @@ document.addEventListener('keydown', e => {
     document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
     showToast('jumped to projects (tip: press / anytime)');
   }
+});
+
+// MOBILE MENU TOGGLE
+const menuBtn = document.getElementById('menu-btn');
+const navLinks = document.getElementById('nav-links');
+
+// Open/close menu when clicking the hamburger icon
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  // Change icon to 'X' when open
+  menuBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+});
+
+// Close menu automatically when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    menuBtn.textContent = '☰';
+  });
 });
