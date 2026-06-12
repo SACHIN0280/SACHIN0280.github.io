@@ -178,7 +178,7 @@ contactForm.addEventListener('submit', async function(e) {
     // -------------------------------------------------------------
     // IMPORTANT: REPLACE 'YOUR_FORMSPREE_ID_HERE' BELOW WITH YOUR ACTUAL ID
     // -------------------------------------------------------------
-    const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID_HERE', {
+    const response = await fetch('https://formspree.io/f/mjgdelpq', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
