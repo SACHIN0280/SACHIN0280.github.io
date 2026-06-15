@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@theme {
+  --color-background: #0b0d0e;
+  --color-foreground: #ffffff;
+  --color-muted: rgba(255, 255, 255, 0.06);
+  --color-muted-foreground: #a1a1aa;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --font-doto: "Doto", monospace;
+  --font-space: "Space Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-space);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background-color: var(--color-foreground);
+    color: var(--color-background);
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center whitespace-nowrap text-sm transition-all border border-border bg-muted text-foreground hover:bg-white/10 h-10 px-4 cursor-pointer font-doto uppercase rounded-md;
+  }
+  .tag {
+    @apply text-xs border border-border bg-muted px-2 py-1 uppercase font-doto rounded-md;
+  }
+}
