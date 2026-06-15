@@ -1,4 +1,4 @@
-import { Code, User, Mail, FileText, TerminalSquare } from 'lucide-react';
+import { Code, User, Mail, TerminalSquare } from 'lucide-react';
 
 const Home = () => {
   return (
