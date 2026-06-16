@@ -9,7 +9,7 @@ const Home = () => {
         </span>
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight uppercase font-doto">Sachin Parashar</h1>
         <p className="text-xs sm:text-sm uppercase tracking-[0.1em] text-muted-foreground max-w-xl leading-relaxed">
-          I work on AI, LLMs, and building full-stack SaaS tools.
+          I work on AI backends, LLMs, and building intelligent SaaS applications.
         </p>
 
         <div className="flex items-center gap-4 pt-4">
@@ -30,10 +30,10 @@ const Home = () => {
         <h2 className="text-2xl font-doto uppercase font-bold">About Me</h2>
         <div className="space-y-4 text-muted-foreground text-sm sm:text-base leading-relaxed">
           <p>
-            I'm Sachin, an <strong className="text-white">Applied AI Engineer</strong> and undergraduate who learns by building intelligent systems. I specialize in integrating language models, prompt engineering, and building scalable applications with Next.js and Python.
+            I'm Sachin, an <strong className="text-white">AI & ML Undergraduate</strong> at AKGEC, Ghaziabad, who learns by building intelligent systems. I specialize in integrating language models, advanced prompt engineering, and building robust AI backends with Python and FastAPI.
           </p>
           <p>
-            Currently in my 7th semester at AKGEC, Ghaziabad. I care about code that works in production, not just in notebooks. I've built everything from full-stack SaaS platforms to movie recommendation engines handling thousands of records.
+            Currently in my 7th semester, I care about code that works in production, not just in notebooks. I've built everything from AI-powered ATS resume optimizers and full-stack sales intelligence platforms to movie recommendation engines. I also lead research on multi-agent frameworks as part of the NOVA-ML project.
           </p>
         </div>
       </section>
