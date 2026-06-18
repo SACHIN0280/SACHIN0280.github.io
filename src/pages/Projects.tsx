@@ -4,7 +4,6 @@ const Projects = () => {
   const projects = [
     {
       title: "Scapia AI: Document & YouTube RAG Assistant",
-      year: "2026",
       points: [
         <>Built a <strong>Retrieval-Augmented Generation (RAG)</strong> application utilizing <strong>Streamlit, Groq API, and LLaMA models</strong> for document analysis</>,
         <>Engineered data pipelines to extract and process text from both <strong>PDF documents</strong> and <strong>YouTube video transcripts</strong></>,
@@ -15,7 +14,6 @@ const Projects = () => {
     },
     {
       title: "SalesMind: AI Sales Intelligence Platform",
-      year: "2026",
       link: "https://ai-sales-intelligence-nine.vercel.app",
       points: [
         <>Built an <strong>AI backend with FastAPI, Groq API, and LLaMA 3.3 70B</strong> — integrated with a <strong>Next.js</strong> frontend</>,
@@ -27,7 +25,6 @@ const Projects = () => {
     },
     {
       title: "HireSense.AI: Smart ATS Resume Optimizer",
-      year: "2025",
       link: "https://hiresenseai-krfcqbrygnwubkjt3skayf.streamlit.app/",
       points: [
         <>Built an <strong>AI-powered ATS resume analyzer</strong> via Groq API and Llama-3 70B for real-time job description matching</>,
@@ -41,7 +38,6 @@ const Projects = () => {
     },
     {
       title: "NextWatch: Movie Recommendation System",
-      year: "2024",
       link: "https://guufqgyybgksuumstrz9ma.streamlit.app/",
       points: [
         <>Developed a <strong>content-based recommendation system</strong> on <strong>TMDB dataset</strong> of <strong>5,000+ movies</strong> delivering personalized suggestions</>,
@@ -54,7 +50,6 @@ const Projects = () => {
     },
     {
       title: "Group Leader, NOVA-ML Project",
-      year: "Present",
       points: [
         <><strong>Conceptualized and proposed</strong> the multi-agent framework idea, driving the project vision and technical direction for the team</>,
         <><strong>Leading and coordinating a team of 4</strong>, assigning responsibilities and ensuring smooth collaboration across all project phases</>,
@@ -85,7 +80,6 @@ const Projects = () => {
                   </a>
                 )}
               </div>
-              <span className="text-sm text-muted-foreground whitespace-nowrap">{p.year}</span>
             </div>
             <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground leading-relaxed marker:text-muted-foreground/50">
               {p.points.map((point, idx) => (
