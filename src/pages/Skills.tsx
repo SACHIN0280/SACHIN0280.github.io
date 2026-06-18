@@ -5,17 +5,17 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: <Code2 className="w-5 h-5 text-white/80" />,
-      skills: ["Python", "SQL"]
+      skills: ["Python", "TypeScript", "SQL"]
     },
     {
       title: "Frameworks & Libraries",
       icon: <Layers className="w-5 h-5 text-white/80" />,
-      skills: ["FastAPI", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"]
+      skills: ["FastAPI", "LangChain", "Next.js", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"]
     },
     {
       title: "AI & Tools",
       icon: <Cpu className="w-5 h-5 text-white/80" />,
-      skills: ["Prompt Engineering", "LLMs", "Generative AI", "Groq API", "Streamlit", "Git", "GitHub", "REST APIs", "Vercel"]
+      skills: ["RAG", "Vector Databases", "Prompt Engineering", "LLMs", "Generative AI", "Groq API", "Streamlit", "Git", "GitHub", "REST APIs", "Vercel"]
     }
   ];
 
