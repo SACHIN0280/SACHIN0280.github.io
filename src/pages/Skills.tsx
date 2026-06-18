@@ -5,12 +5,12 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: <Code2 className="w-5 h-5 text-white/80" />,
-      skills: ["Python", "TypeScript", "SQL"]
+      skills: ["Python", "SQL"]
     },
     {
       title: "Frameworks & Libraries",
       icon: <Layers className="w-5 h-5 text-white/80" />,
-      skills: ["FastAPI", "LangChain", "Next.js", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"]
+      skills: ["FastAPI", "LangChain", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"]
     },
     {
       title: "AI & Tools",
