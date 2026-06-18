@@ -3,6 +3,17 @@ import { ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: "Scapia AI: Document & YouTube RAG Assistant",
+      year: "2026",
+      points: [
+        <>Built a <strong>Retrieval-Augmented Generation (RAG)</strong> application utilizing <strong>Streamlit, Groq API, and LLaMA models</strong> for document analysis</>,
+        <>Engineered data pipelines to extract and process text from both <strong>PDF documents</strong> and <strong>YouTube video transcripts</strong></>,
+        <>Implemented a robust conversational agent using <strong>LangChain</strong> with context-aware query rewriting to ensure highly accurate, grounded answers</>,
+        <>Designed a dynamic, custom-styled <strong>Streamlit</strong> frontend featuring a multi-chat interface, persistent chat history, and seamless source selection</>
+      ],
+      tags: ["PYTHON", "STREAMLIT", "GROQ API", "LLAMA", "LANGCHAIN", "RAG"]
+    },
+    {
       title: "SalesMind: AI Sales Intelligence Platform",
       year: "2026",
       link: "https://ai-sales-intelligence-nine.vercel.app",
