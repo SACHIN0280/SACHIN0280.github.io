@@ -4,6 +4,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Scapia AI: Document & YouTube RAG Assistant",
+      link: "https://scapia.streamlit.app/",
       points: [
         <>Built a <strong>Retrieval-Augmented Generation (RAG)</strong> application utilizing <strong>Streamlit, Groq API, and LLaMA models</strong> for document analysis</>,
         <>Engineered data pipelines to extract and process text from both <strong>PDF documents</strong> and <strong>YouTube video transcripts</strong></>,
