@@ -39,6 +39,27 @@ const Home = () => {
       </section>
 
       <section className="space-y-4">
+        <h2 className="text-2xl font-doto uppercase font-bold">Positions of Responsibility</h2>
+        <div className="space-y-4">
+          <div className="rounded-lg bg-white/5 border border-white/10 p-5 sm:p-6 hover:border-white/20 transition-all duration-300">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
+              <div>
+                <h3 className="font-bold text-white text-lg font-doto tracking-tight">Group Leader, NOVA-ML Project</h3>
+                <p className="text-sm text-muted-foreground font-space mt-1">Multi-Agent Systems & Agentic AI Research</p>
+              </div>
+              <span className="text-xs font-space text-muted-foreground bg-white/5 px-3 py-1 rounded-full border border-white/10 whitespace-nowrap">Sep 2024 - Present</span>
+            </div>
+            <ul className="list-disc pl-4 space-y-2 text-sm text-muted-foreground leading-relaxed marker:text-white/30 font-space">
+              <li><strong className="text-white/80">Conceptualized and proposed</strong> the multi-agent framework idea, driving the project vision and technical direction for the team</li>
+              <li><strong className="text-white/80">Leading and coordinating a team of 4</strong>, assigning responsibilities and ensuring smooth collaboration across all project phases</li>
+              <li>Conducted <strong className="text-white/80">in-depth research</strong> on multi-agent systems and agentic AI principles to define the system architecture</li>
+              <li>Maintaining regular <strong className="text-white/80">sync-ups with the faculty guide</strong> to align project progress with academic requirements and research objectives</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="space-y-4">
         <p className="font-doto text-sm text-muted-foreground">
           My <strong className="text-white">social links</strong> if you wish to connect
         </p>

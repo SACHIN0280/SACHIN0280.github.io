@@ -3,7 +3,6 @@ import scapiaAiImg from '../assets/scapia_ai.png';
 import salesmindImg from '../assets/salesmind.png';
 import hiresenseAiImg from '../assets/hiresense_ai.png';
 import nextwatchImg from '../assets/nextwatch.png';
-import novaMlImg from '../assets/nova_ml.png';
 
 const Projects = () => {
   const projects = [
@@ -61,18 +60,6 @@ const Projects = () => {
         <>Processed and cleaned <strong>5,000+ records</strong> with Pandas reducing data noise and improving overall recommendation accuracy</>
       ],
       tags: ["PYTHON", "SCIKIT-LEARN", "PANDAS", "NUMPY", "STREAMLIT"]
-    },
-    {
-      title: "Group Leader, NOVA-ML Project",
-      date: "Sep 2024 - Present",
-      image: novaMlImg,
-      points: [
-        <><strong>Conceptualized and proposed</strong> the multi-agent framework idea, driving the project vision and technical direction for the team</>,
-        <><strong>Leading and coordinating a team of 4</strong>, assigning responsibilities and ensuring smooth collaboration across all project phases</>,
-        <>Conducted <strong>in-depth research</strong> on multi-agent systems and agentic AI principles to define the system architecture</>,
-        <>Maintaining regular <strong>sync-ups with the faculty guide</strong> to align project progress with academic requirements and research objectives</>
-      ],
-      tags: ["MULTI-AGENT SYSTEMS", "AGENTIC AI", "RESEARCH", "LEADERSHIP"]
     }
   ];
 
