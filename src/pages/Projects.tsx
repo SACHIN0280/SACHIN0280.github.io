@@ -1,9 +1,16 @@
 import { ExternalLink } from 'lucide-react';
+import scapiaAiImg from '../assets/scapia_ai.png';
+import salesmindImg from '../assets/salesmind.png';
+import hiresenseAiImg from '../assets/hiresense_ai.png';
+import nextwatchImg from '../assets/nextwatch.png';
+import novaMlImg from '../assets/nova_ml.png';
 
 const Projects = () => {
   const projects = [
     {
       title: "Scapia AI: Document & YouTube RAG Assistant",
+      date: "March 2025 - Present",
+      image: scapiaAiImg,
       link: "https://scapia.streamlit.app/",
       points: [
         <>Built a <strong>Retrieval-Augmented Generation (RAG)</strong> application utilizing <strong>Streamlit, Groq API, and LLaMA models</strong> for document analysis</>,
@@ -15,6 +22,8 @@ const Projects = () => {
     },
     {
       title: "SalesMind: AI Sales Intelligence Platform",
+      date: "Feb 2025 - Present",
+      image: salesmindImg,
       link: "https://ai-sales-intelligence-nine.vercel.app",
       points: [
         <>Built an <strong>AI backend with FastAPI, Groq API, and LLaMA 3.3 70B</strong> — integrated with a <strong>Next.js</strong> frontend</>,
@@ -26,6 +35,8 @@ const Projects = () => {
     },
     {
       title: "HireSense.AI: Smart ATS Resume Optimizer",
+      date: "Jan 2025 - Feb 2025",
+      image: hiresenseAiImg,
       link: "https://hiresenseai-krfcqbrygnwubkjt3skayf.streamlit.app/",
       points: [
         <>Built an <strong>AI-powered ATS resume analyzer</strong> via Groq API and Llama-3 70B for real-time job description matching</>,
@@ -39,6 +50,8 @@ const Projects = () => {
     },
     {
       title: "NextWatch: Movie Recommendation System",
+      date: "Nov 2024 - Dec 2024",
+      image: nextwatchImg,
       link: "https://guufqgyybgksuumstrz9ma.streamlit.app/",
       points: [
         <>Developed a <strong>content-based recommendation system</strong> on <strong>TMDB dataset</strong> of <strong>5,000+ movies</strong> delivering personalized suggestions</>,
@@ -51,6 +64,8 @@ const Projects = () => {
     },
     {
       title: "Group Leader, NOVA-ML Project",
+      date: "Sep 2024 - Present",
+      image: novaMlImg,
       points: [
         <><strong>Conceptualized and proposed</strong> the multi-agent framework idea, driving the project vision and technical direction for the team</>,
         <><strong>Leading and coordinating a team of 4</strong>, assigning responsibilities and ensuring smooth collaboration across all project phases</>,
@@ -62,33 +77,69 @@ const Projects = () => {
   ];
 
   return (
-    <div className="space-y-8">
-      <h1 className="text-3xl font-doto uppercase font-bold">Experience / Projects</h1>
-      <div className="space-y-12">
+    <div className="space-y-12 w-full py-12">
+      <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <div className="space-y-2">
+          <div className="inline-block rounded-lg bg-white text-black px-3 py-1 text-sm font-bold uppercase font-doto">My Projects</div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-doto uppercase">Check out my latest work</h2>
+          <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-[800px] mx-auto">
+            I've worked on a variety of projects, from simple websites to complex AI applications. Here are a few of my favorites.
+          </p>
+        </div>
+      </div>
+      
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 max-w-5xl mx-auto">
         {projects.map((p, i) => (
-          <div key={i} className="space-y-4">
-            <div className="flex justify-between items-start sm:items-center flex-col sm:flex-row gap-2">
-              <div className="flex items-center gap-3 flex-wrap">
-                <h3 className="font-doto text-xl text-white">{p.title}</h3>
-                {p.link && (
-                  <a 
-                    href={p.link} 
-                    target="_blank" 
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium bg-white/5 border border-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/10 hover:border-white/30 hover:-translate-y-0.5 transition-all duration-300"
-                  >
-                    Live App <ExternalLink className="w-3 h-3" />
-                  </a>
-                )}
+          <div key={i} className="rounded-lg bg-white/5 border border-white/10 flex flex-col overflow-hidden hover:shadow-2xl hover:border-white/20 transition-all duration-300 ease-out h-full group">
+            {p.link ? (
+              <a className="block cursor-pointer overflow-hidden relative" href={p.link} target="_blank" rel="noreferrer">
+                <img alt={p.title} className="h-48 w-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src={p.image} />
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="bg-white text-black px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
+                    View Project <ExternalLink className="w-4 h-4" />
+                  </span>
+                </div>
+              </a>
+            ) : (
+              <div className="block overflow-hidden relative">
+                <img alt={p.title} className="h-48 w-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src={p.image} />
+              </div>
+            )}
+            
+            <div className="flex flex-col px-6 pt-6 flex-grow">
+              <div className="space-y-2">
+                <h3 className="font-bold tracking-tight text-xl font-doto text-white">{p.title}</h3>
+                <time className="font-space text-xs text-muted-foreground">{p.date}</time>
+                <div className="prose max-w-full text-pretty font-space text-sm text-muted-foreground mt-4">
+                  <ul className="list-disc pl-4 space-y-2 marker:text-white/30">
+                    {p.points.map((point, idx) => (
+                      <li key={idx}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
-            <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground leading-relaxed marker:text-muted-foreground/50">
-              {p.points.map((point, idx) => (
-                <li key={idx}>{point}</li>
-              ))}
-            </ul>
-            <div className="flex flex-wrap gap-2">
-              {p.tags.map(t => <span key={t} className="tag">{t}</span>)}
+            
+            <div className="text-pretty font-space text-sm text-muted-foreground mt-4 flex flex-col px-6 pb-6">
+              <div className="flex flex-wrap gap-2">
+                {p.tags.map(t => (
+                  <div key={t} className="inline-flex items-center rounded-md border border-white/10 bg-white/5 px-2 py-1 text-[10px] font-semibold text-white/80 uppercase">
+                    {t}
+                  </div>
+                ))}
+              </div>
+              
+              {p.link && (
+                <div className="flex items-center pt-6 mt-auto">
+                  <div className="flex flex-row flex-wrap items-start gap-2">
+                    <a target="_blank" href={p.link} rel="noreferrer">
+                      <div className="items-center rounded-md border border-white/20 bg-white text-black hover:bg-white/90 shadow flex gap-2 px-4 py-2 text-xs font-bold transition-colors uppercase">
+                        <ExternalLink className="w-4 h-4" /> Live App
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         ))}
