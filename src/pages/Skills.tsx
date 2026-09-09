@@ -10,12 +10,12 @@ const Skills = () => {
     {
       title: "Frameworks & Libraries",
       icon: <Layers className="w-5 h-5 text-white/80" />,
-      skills: ["FastAPI", "LangChain", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"]
+      skills: ["LangChain", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"]
     },
     {
       title: "AI & Tools",
       icon: <Cpu className="w-5 h-5 text-white/80" />,
-      skills: ["RAG", "Vector Databases", "Prompt Engineering", "LLMs", "Generative AI", "Groq API", "Streamlit", "Git", "GitHub", "REST APIs", "Vercel"]
+      skills: ["RAG", "Vector Databases", "Prompt Engineering", "LLMs", "Generative AI", "Groq API", "Streamlit", "Git", "GitHub", "Vercel"]
     }
   ];
 
