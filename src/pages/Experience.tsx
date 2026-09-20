@@ -65,14 +65,9 @@ const Experience = () => {
             </h3>
             <p className="text-sm text-white/60 font-space mt-0.5">{item.org}</p>
           </div>
-          <div className="flex flex-col items-start sm:items-end gap-1 shrink-0">
-            <span className="text-xs text-muted-foreground bg-white/5 border border-white/10 px-3 py-1 rounded-full whitespace-nowrap">
-              {item.period}
-            </span>
-            {item.location && (
-              <span className="text-xs text-white/30">{item.location}</span>
-            )}
-          </div>
+          <span className="text-xs text-muted-foreground bg-white/5 border border-white/10 px-3 py-1 rounded-full whitespace-nowrap shrink-0">
+            {item.period}
+          </span>
         </div>
 
         {/* Description */}
