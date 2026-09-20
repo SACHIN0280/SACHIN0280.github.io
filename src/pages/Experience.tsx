@@ -1,22 +1,18 @@
-import { Briefcase, GraduationCap } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 
 interface ExperienceItem {
-  type: 'work' | 'education';
   title: string;
   org: string;
   period: string;
-  location?: string;
   description: string[];
   tags?: string[];
 }
 
 const experiences: ExperienceItem[] = [
   {
-    type: 'work',
     title: 'AI Backend Intern',
     org: 'Clinicals Internal App',
     period: 'Jan 2026 – Present',
-    location: 'Remote',
     description: [
       'Built and maintained AI-powered backend services using Python and FastAPI, handling LLM integrations and RAG pipelines.',
       'Designed and implemented multi-agent orchestration workflows for clinical data processing.',
@@ -26,11 +22,9 @@ const experiences: ExperienceItem[] = [
     tags: ['Python', 'FastAPI', 'LangChain', 'RAG', 'LLMs'],
   },
   {
-    type: 'work',
     title: 'Research Lead – NOVA-ML',
-    org: 'AKGEC, Ghaziabad',
+    org: 'Multi-Agent Systems Research',
     period: 'Sep 2024 – Present',
-    location: 'Ghaziabad, UP',
     description: [
       'Conceptualized and proposed a multi-agent framework for academic research, driving the vision and technical direction.',
       'Led a cross-functional team of 4, assigning tasks and ensuring delivery across all project phases.',
@@ -39,25 +33,9 @@ const experiences: ExperienceItem[] = [
     ],
     tags: ['Multi-Agent Systems', 'Agentic AI', 'Research', 'Team Lead'],
   },
-  {
-    type: 'education',
-    title: 'B.Tech – Artificial Intelligence & Machine Learning',
-    org: 'AKGEC, Ghaziabad',
-    period: '2022 – 2026',
-    location: 'Ghaziabad, UP',
-    description: [
-      'Specializing in AI, ML, deep learning, and intelligent systems.',
-      'Active member of college AI/ML research community.',
-      'Currently in 7th semester with focus on production-grade AI systems.',
-    ],
-    tags: ['AI/ML', 'Deep Learning', 'Python', 'Research'],
-  },
 ];
 
 const Experience = () => {
-  const workItems = experiences.filter(e => e.type === 'work');
-  const educationItems = experiences.filter(e => e.type === 'education');
-
   const renderCard = (item: ExperienceItem, idx: number) => (
     <div
       key={idx}
@@ -131,22 +109,7 @@ const Experience = () => {
           </h2>
         </div>
         <div className="space-y-8">
-          {workItems.map(renderCard)}
-        </div>
-      </div>
-
-      {/* Education */}
-      <div className="space-y-6 relative z-10">
-        <div className="flex items-center gap-3">
-          <div className="p-2 bg-white/5 border border-white/10 rounded-xl">
-            <GraduationCap className="w-4 h-4 text-white/70" />
-          </div>
-          <h2 className="text-lg font-doto uppercase font-semibold text-white/80 tracking-wide">
-            Education
-          </h2>
-        </div>
-        <div className="space-y-8">
-          {educationItems.map(renderCard)}
+          {experiences.map(renderCard)}
         </div>
       </div>
     </div>
