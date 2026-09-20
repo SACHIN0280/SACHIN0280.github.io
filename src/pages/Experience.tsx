@@ -10,16 +10,28 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    title: 'AI Backend Intern',
-    org: 'Clinicals Internal App',
-    period: 'Jan 2026 – Present',
+    title: 'Software Developer',
+    org: 'Clinicals',
+    period: 'Sep 2026 – Present',
     description: [
-      'Built and maintained AI-powered backend services using Python and FastAPI, handling LLM integrations and RAG pipelines.',
-      'Designed and implemented multi-agent orchestration workflows for clinical data processing.',
-      'Optimized vector database queries and embedding strategies to improve retrieval accuracy by 30%.',
-      'Collaborated with the frontend team to deliver seamless API contracts and real-time streaming responses.',
+      'Own end-to-end development of a production Android app serving students, mentors, and the internal team — built with React, TypeScript, Vite, Supabase, and Capacitor.',
+      'Built a full CRM system (34+ components) covering lead management, duplicate detection, stage tracking, follow-up calls, intro calls, task management, and multi-stage onboarding pipeline.',
+      'Implemented real-time push notification system using Firebase Cloud Messaging (FCM) + Capacitor Push Notifications for both Android and PWA (web) targets.',
+      'Developed payment verification, invoice creation, and payment tracking workflows with full Supabase Postgres integration and Row Level Security (RLS) policies.',
+      'Built student onboarding pipeline with document uploads, program assignment, training phase management, and mentor assignment workflows.',
+      'Integrated WhatsApp messaging templates and automated WhatsApp outreach directly from the CRM lead detail view.',
+      'Developed Meta CAPI (Conversion API) diagnostics panel for tracking ad attribution and lead source management.',
+      'Built team dashboards including: escalations, bug reports, analytics, todos, reports, team access management, and settings.',
+      'Set up CI/CD pipeline with GitHub Actions for automated Android APK builds; app deployed as a Capacitor-wrapped PWA on Netlify.',
+      'Worked extensively with Supabase — PostgreSQL queries, real-time subscriptions, Supabase Auth, and storage for document management.',
+      'Maintained and extended Admin panel with blog management, program management, stage configuration, webinar registrations, and lead source tracking.',
     ],
-    tags: ['Python', 'FastAPI', 'LangChain', 'RAG', 'LLMs'],
+    tags: [
+      'React', 'TypeScript', 'Vite', 'Supabase', 'PostgreSQL',
+      'Capacitor', 'Android', 'Firebase FCM', 'Push Notifications',
+      'Tailwind CSS', 'shadcn/ui', 'TanStack Query', 'React Router',
+      'GitHub Actions', 'CI/CD', 'PWA', 'Netlify', 'CRM', 'WhatsApp API',
+    ],
   },
   {
     title: 'Research Lead – NOVA-ML',
