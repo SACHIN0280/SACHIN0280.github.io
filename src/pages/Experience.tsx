@@ -34,9 +34,9 @@ const experiences: ExperienceItem[] = [
     ],
   },
   {
-    title: 'Research Lead – NOVA-ML',
+    title: 'A Multi-Agent Framework for Automation in Machine Learning Pipeline',
     org: 'Multi-Agent Systems Research',
-    period: 'Sep 2024 – Present',
+    period: 'June 2026 – Present',
     description: [
       'Conceptualized and proposed a multi-agent framework for academic research, driving the vision and technical direction.',
       'Led a cross-functional team of 4, assigning tasks and ensuring delivery across all project phases.',
