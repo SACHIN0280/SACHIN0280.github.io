@@ -29,6 +29,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <Link to="/projects" className={`hover:opacity-80 transition-opacity ${location.pathname === '/projects' ? 'text-white' : 'text-muted-foreground'}`}>Projects</Link>
           <Link to="/certifications" className={`hover:opacity-80 transition-opacity ${location.pathname === '/certifications' ? 'text-white' : 'text-muted-foreground'}`}>Certs</Link>
           <Link to="/skills" className={`hover:opacity-80 transition-opacity ${location.pathname === '/skills' ? 'text-white' : 'text-muted-foreground'}`}>Skills</Link>
+          <Link to="/experience" className={`hover:opacity-80 transition-opacity ${location.pathname === '/experience' ? 'text-white' : 'text-muted-foreground'}`}>Experience</Link>
           <Link to="/contact" className={`hover:opacity-80 transition-opacity ${location.pathname === '/contact' ? 'text-white' : 'text-muted-foreground'}`}>Contact</Link>
         </div>
       </nav>
