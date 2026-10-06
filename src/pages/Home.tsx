@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SiGithub, SiGmail } from 'react-icons/si';
 import { FaLinkedin } from 'react-icons/fa6';
-import { FileDown, ArrowRight, Copy, Check, Smartphone, Bot, Users } from 'lucide-react';
+import { ArrowRight, Copy, Check, Smartphone, Bot, Users } from 'lucide-react';
 
 const EMAIL = 's.parashar2806@gmail.com';
 
@@ -63,10 +63,7 @@ const Home = () => {
         </Link>
 
         <div className="flex flex-wrap items-center gap-3 pt-2">
-          <a href="./resume.pdf" target="_blank" rel="noreferrer" className="btn bg-white text-black hover:bg-white/85">
-            <FileDown className="w-4 h-4 mr-2" /> Resume
-          </a>
-          <button className="btn" onClick={copyEmail} aria-live="polite">
+          <button className="btn bg-white text-black hover:bg-white/85" onClick={copyEmail} aria-live="polite">
             {copied ? <Check className="w-4 h-4 mr-2" /> : <Copy className="w-4 h-4 mr-2" />}
             {copied ? 'Copied!' : 'Copy email'}
           </button>
