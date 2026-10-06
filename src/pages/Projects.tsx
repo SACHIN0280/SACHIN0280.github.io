@@ -7,17 +7,18 @@ import nextwatchImg from '../assets/nextwatch.png';
 const Projects = () => {
   const projects = [
     {
-      title: "Scapia AI: Document & YouTube RAG Assistant",
+      title: "Scapia AI: Multi-Modal RAG Document Assistant",
       date: "March 2025 - Present",
       image: scapiaAiImg,
       link: "https://scapia.streamlit.app/",
       points: [
-        <>Built a <strong>Retrieval-Augmented Generation (RAG)</strong> application utilizing <strong>Streamlit, Groq API, and LLaMA models</strong> for document analysis</>,
-        <>Engineered data pipelines to extract and process text from both <strong>PDF documents</strong> and <strong>YouTube video transcripts</strong></>,
+        <>Engineered a multi-modal <strong>RAG pipeline</strong> using <strong>LangChain</strong> to extract and index complex <strong>PDFs</strong> and <strong>YouTube transcripts</strong></>,
+        <>Integrated <strong>ChromaDB</strong> and <strong>HuggingFace embeddings</strong> for fast local vector storage and precise query matching</>,
+        <>Powered the chat via <strong>Groq API and Llama 3.3</strong> for fast, context-grounded inference</>,
         <>Implemented a robust conversational agent using <strong>LangChain</strong> with context-aware query rewriting to ensure highly accurate, grounded answers</>,
         <>Designed a dynamic, custom-styled <strong>Streamlit</strong> frontend featuring a multi-chat interface, persistent chat history, and seamless source selection</>
       ],
-      tags: ["PYTHON", "STREAMLIT", "GROQ API", "LLAMA", "LANGCHAIN", "RAG"]
+      tags: ["PYTHON", "LANGCHAIN", "CHROMADB", "HUGGINGFACE", "GROQ API", "STREAMLIT", "RAG"]
     },
     {
       title: "SalesMind: AI Sales Intelligence Platform",
@@ -70,7 +71,7 @@ const Projects = () => {
           <div className="inline-block rounded-lg bg-white text-black px-3 py-1 text-sm font-bold uppercase font-doto">My Projects</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-doto uppercase">Check out my latest work</h2>
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-[800px] mx-auto">
-            I've worked on a variety of projects, from simple websites to complex AI applications. Here are a few of my favorites.
+            I've worked on a variety of projects, from RAG assistants and LLM-powered tools to classic ML systems. Here are a few of my favorites.
           </p>
         </div>
       </div>

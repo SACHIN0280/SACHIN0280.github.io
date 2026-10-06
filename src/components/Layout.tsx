@@ -2,6 +2,15 @@ import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import CustomCursor from './CustomCursor';
 
+const navLinks = [
+  { to: '/', label: 'Home' },
+  { to: '/experience', label: 'Experience' },
+  { to: '/projects', label: 'Projects' },
+  { to: '/skills', label: 'Skills' },
+  { to: '/certifications', label: 'Certs' },
+  { to: '/contact', label: 'Contact' },
+];
+
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
 
@@ -16,30 +25,48 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     }
   }, []);
 
+  // Start each page at the top instead of keeping the previous scroll position
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
-    <div className="max-w-[900px] mx-auto px-8 py-16">
+    <div className="max-w-[900px] mx-auto px-6 sm:px-8 py-16">
       <CustomCursor />
       <nav className="flex flex-col sm:flex-row justify-between items-center mb-16 font-doto uppercase gap-4">
         <Link to="/" className="text-xl font-bold flex gap-2">
           <span className="text-muted-foreground">SP</span>
           <span>Sachin Parashar</span>
         </Link>
-        <div className="flex flex-wrap justify-center gap-4 text-sm">
-          <Link to="/" className={`hover:opacity-80 transition-opacity ${location.pathname === '/' ? 'text-white' : 'text-muted-foreground'}`}>Home</Link>
-          <Link to="/projects" className={`hover:opacity-80 transition-opacity ${location.pathname === '/projects' ? 'text-white' : 'text-muted-foreground'}`}>Projects</Link>
-          <Link to="/certifications" className={`hover:opacity-80 transition-opacity ${location.pathname === '/certifications' ? 'text-white' : 'text-muted-foreground'}`}>Certs</Link>
-          <Link to="/skills" className={`hover:opacity-80 transition-opacity ${location.pathname === '/skills' ? 'text-white' : 'text-muted-foreground'}`}>Skills</Link>
-          <Link to="/experience" className={`hover:opacity-80 transition-opacity ${location.pathname === '/experience' ? 'text-white' : 'text-muted-foreground'}`}>Experience</Link>
-          <Link to="/contact" className={`hover:opacity-80 transition-opacity ${location.pathname === '/contact' ? 'text-white' : 'text-muted-foreground'}`}>Contact</Link>
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
+          {navLinks.map(({ to, label }) => {
+            const active = location.pathname === to;
+            return (
+              <Link
+                key={to}
+                to={to}
+                aria-current={active ? 'page' : undefined}
+                className={`relative pb-1 hover:text-white transition-colors ${active ? 'text-white' : 'text-muted-foreground'}`}
+              >
+                {label}
+                <span className={`absolute left-0 -bottom-0.5 h-px bg-white transition-all duration-300 ${active ? 'w-full' : 'w-0'}`} />
+              </Link>
+            );
+          })}
         </div>
       </nav>
-      
-      <main>
+
+      <main key={location.pathname} className="animate-[fadeUp_0.4s_ease-out]">
         {children}
       </main>
 
-      <footer className="mt-24 text-center text-muted-foreground text-sm font-doto">
-        © 2026 Sachin Parashar. All rights reserved.
+      <footer className="mt-24 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-muted-foreground text-sm font-doto">
+        <span>© {new Date().getFullYear()} Sachin Parashar</span>
+        <div className="flex gap-4 uppercase">
+          <a href="https://github.com/SACHIN0280" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
+          <a href="https://linkedin.com/in/sachin-parashar-94499b137" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+          <a href="./resume.pdf" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Resume</a>
+        </div>
       </footer>
     </div>
   );
