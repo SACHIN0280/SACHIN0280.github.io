@@ -21,7 +21,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     if (!existingScript) {
       const script = document.createElement('script');
       script.id = 'oneko-script';
-      script.src = 'https://rawcdn.githack.com/adryd325/oneko.js/14bab15a755d0e35cd4ae19c931d96d306f99f42/oneko.js';
+      script.src = '/oneko.js';
       script.async = true;
       document.body.appendChild(script);
     }
