@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react';
+import TechIcon from '../components/TechIcon';
 import scapiaAiImg from '../assets/scapia_ai.png';
 import salesmindImg from '../assets/salesmind.png';
 import hiresenseAiImg from '../assets/hiresense_ai.png';
@@ -111,7 +112,8 @@ const Projects = () => {
             <div className="text-pretty font-space text-sm text-muted-foreground mt-4 flex flex-col px-6 pb-6">
               <div className="flex flex-wrap gap-2">
                 {p.tags.map(t => (
-                  <div key={t} className="inline-flex items-center rounded-md border border-white/10 bg-white/5 px-2 py-1 text-[10px] font-semibold text-white/80 uppercase">
+                  <div key={t} className="inline-flex items-center gap-1.5 rounded-md border border-white/10 bg-white/5 px-2 py-1 text-[10px] font-semibold text-white/80 uppercase">
+                    <TechIcon name={t} className="w-3 h-3" />
                     {t}
                   </div>
                 ))}

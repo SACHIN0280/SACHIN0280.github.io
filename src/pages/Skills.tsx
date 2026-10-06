@@ -1,4 +1,5 @@
 import { Code2, Layers, Cpu } from 'lucide-react';
+import TechIcon from '../components/TechIcon';
 
 const Skills = () => {
   const categories = [
@@ -46,8 +47,9 @@ const Skills = () => {
               {category.skills.map(skill => (
                 <span 
                   key={skill} 
-                  className="px-3 py-1.5 text-xs font-medium bg-white/5 border border-white/10 rounded-full text-white/70 hover:text-white hover:bg-white/10 hover:border-white/20 hover:-translate-y-0.5 transition-all duration-200 cursor-default"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium bg-white/5 border border-white/10 rounded-full text-white/70 hover:text-white hover:bg-white/10 hover:border-white/20 hover:-translate-y-0.5 transition-all duration-200 cursor-default"
                 >
+                  <TechIcon name={skill} />
                   {skill}
                 </span>
               ))}

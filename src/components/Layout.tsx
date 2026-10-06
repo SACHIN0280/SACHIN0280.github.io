@@ -1,6 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import CustomCursor from './CustomCursor';
+import { SiGithub, SiGmail } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa6';
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -62,9 +64,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <footer className="mt-24 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-muted-foreground text-sm font-doto">
         <span>© {new Date().getFullYear()} Sachin Parashar</span>
-        <div className="flex gap-4 uppercase">
-          <a href="https://github.com/SACHIN0280" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
-          <a href="https://linkedin.com/in/sachin-parashar-94499b137" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+        <div className="flex flex-wrap justify-center gap-4 uppercase">
+          <a href="https://github.com/SACHIN0280" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-white transition-colors"><SiGithub className="w-3.5 h-3.5" />GitHub</a>
+          <a href="https://linkedin.com/in/sachin-parashar-94499b137" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-white transition-colors"><FaLinkedin className="w-3.5 h-3.5" />LinkedIn</a>
+          <a href="mailto:s.parashar2806@gmail.com" className="inline-flex items-center gap-1.5 hover:text-white transition-colors"><SiGmail className="w-3.5 h-3.5" />Email</a>
           <a href="./resume.pdf" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Resume</a>
         </div>
       </footer>

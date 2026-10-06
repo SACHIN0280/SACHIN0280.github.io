@@ -1,4 +1,5 @@
-import { Code, User, Mail } from 'lucide-react';
+import { SiGithub, SiGmail } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa6';
 
 const Contact = () => {
   return (
@@ -9,13 +10,13 @@ const Contact = () => {
       </p>
       <div className="flex flex-col gap-4 max-w-sm">
         <a href="mailto:s.parashar2806@gmail.com" className="btn justify-start">
-          <Mail className="w-4 h-4 mr-4" /> s.parashar2806@gmail.com
+          <SiGmail className="w-4 h-4 mr-4 text-[#EA4335]" /> s.parashar2806@gmail.com
         </a>
         <a href="https://linkedin.com/in/sachin-parashar-94499b137" target="_blank" rel="noreferrer" className="btn justify-start">
-          <User className="w-4 h-4 mr-4" /> LinkedIn
+          <FaLinkedin className="w-4 h-4 mr-4 text-[#0A66C2]" /> LinkedIn
         </a>
         <a href="https://github.com/SACHIN0280" target="_blank" rel="noreferrer" className="btn justify-start">
-          <Code className="w-4 h-4 mr-4" /> GitHub
+          <SiGithub className="w-4 h-4 mr-4 text-white" /> GitHub
         </a>
       </div>
     </div>

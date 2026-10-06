@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Code, User, Mail, FileDown, ArrowRight, Copy, Check, Smartphone, Bot, Users } from 'lucide-react';
+import { SiGithub, SiGmail } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa6';
+import { FileDown, ArrowRight, Copy, Check, Smartphone, Bot, Users } from 'lucide-react';
 
 const EMAIL = 's.parashar2806@gmail.com';
 
@@ -116,13 +118,13 @@ const Home = () => {
         </p>
         <div className="flex flex-wrap gap-2">
           <a href="https://github.com/SACHIN0280" target="_blank" rel="noreferrer" className="btn">
-            <Code className="w-4 h-4 mr-2" /> GitHub
+            <SiGithub className="w-4 h-4 mr-2 text-white" /> GitHub
           </a>
           <a href="https://linkedin.com/in/sachin-parashar-94499b137" target="_blank" rel="noreferrer" className="btn">
-            <User className="w-4 h-4 mr-2" /> LinkedIn
+            <FaLinkedin className="w-4 h-4 mr-2 text-[#0A66C2]" /> LinkedIn
           </a>
           <a href={`mailto:${EMAIL}`} className="btn">
-            <Mail className="w-4 h-4 mr-2" /> Email
+            <SiGmail className="w-4 h-4 mr-2 text-[#EA4335]" /> Email
           </a>
         </div>
       </section>

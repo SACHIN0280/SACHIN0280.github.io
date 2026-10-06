@@ -1,4 +1,5 @@
 import { Briefcase, FlaskConical } from 'lucide-react';
+import TechIcon from '../components/TechIcon';
 
 interface ProductBlock {
   name: string;
@@ -82,8 +83,9 @@ const Tags = ({ tags }: { tags: string[] }) => (
     {tags.map(tag => (
       <span
         key={tag}
-        className="text-xs px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white/80 hover:bg-white/10 transition-all duration-200 cursor-default"
+        className="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white/80 hover:bg-white/10 transition-all duration-200 cursor-default"
       >
+        <TechIcon name={tag} className="w-3 h-3" />
         {tag}
       </span>
     ))}
