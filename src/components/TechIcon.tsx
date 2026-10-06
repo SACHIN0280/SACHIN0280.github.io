@@ -3,7 +3,7 @@ import {
   SiPython, SiMysql, SiLangchain, SiScikitlearn, SiPandas, SiNumpy, SiStreamlit,
   SiGit, SiGithub, SiVercel, SiReact, SiTypescript, SiVite, SiSupabase, SiPostgresql,
   SiCapacitor, SiAndroid, SiFirebase, SiReactquery, SiTailwindcss, SiShadcnui,
-  SiNetlify, SiPwa, SiFastapi, SiNextdotjs, SiHuggingface, SiMeta, SiWhatsapp,
+  SiCloudflare, SiPwa, SiFastapi, SiNextdotjs, SiHuggingface, SiMeta, SiWhatsapp,
 } from 'react-icons/si';
 import {
   Database, ShieldCheck, Bot, Brain, Sparkles, Zap, MessageSquareText, BarChart3,
@@ -39,7 +39,7 @@ const icons: Record<string, IconDef> = {
   tanstackquery: { icon: SiReactquery, color: '#FF4154' },
   tailwindcss: { icon: SiTailwindcss, color: '#06B6D4' },
   shadcnui: { icon: SiShadcnui, color: WHITE },
-  netlify: { icon: SiNetlify, color: '#00C7B7' },
+  cloudflare: { icon: SiCloudflare, color: '#F38020' },
   pwa: { icon: SiPwa, color: '#A585FF' },
   fastapi: { icon: SiFastapi, color: '#009688' },
   nextjs: { icon: SiNextdotjs, color: WHITE },

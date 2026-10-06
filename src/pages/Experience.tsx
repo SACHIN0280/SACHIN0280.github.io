@@ -51,14 +51,14 @@ const work: ExperienceItem[] = [
           'Students view shows assigned students, per-student attendance (with undo), syllabus progress, weekly feedback, case sign-off and photos.',
           'Added escalations and clinic applications flows, plus an admin "View as mentor" mode that opens the app read-only as any mentor for support and debugging.',
           'Wrote the Supabase schema as Postgres migrations, with Row Level Security policies and SECURITY DEFINER RPCs that control which students a mentor can see.',
-          'Mobile UX: splash screen, bottom tab bar, and a dark mode that matches the students app. The PWA is deployed on Netlify.',
+          'Mobile UX: splash screen, bottom tab bar, and a dark mode that matches the students app. The PWA is deployed on Cloudflare.',
         ],
       },
     ],
     tags: [
       'React', 'TypeScript', 'Vite', 'Supabase', 'PostgreSQL', 'Row Level Security',
       'Capacitor', 'Android', 'PWA', 'Firebase FCM', 'TanStack Query',
-      'Tailwind CSS', 'shadcn/ui', 'Netlify',
+      'Tailwind CSS', 'shadcn/ui', 'Cloudflare',
     ],
   },
 ];
