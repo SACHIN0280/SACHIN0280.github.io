@@ -1,9 +1,9 @@
 import { ExternalLink } from 'lucide-react';
 import TechIcon from '../components/TechIcon';
-import scapiaAiImg from '../assets/scapia_ai.png';
-import salesmindImg from '../assets/salesmind.png';
-import hiresenseAiImg from '../assets/hiresense_ai.png';
-import nextwatchImg from '../assets/nextwatch.png';
+import scapiaAiImg from '../assets/scapia_ai.webp';
+import salesmindImg from '../assets/salesmind.webp';
+import hiresenseAiImg from '../assets/hiresense_ai.webp';
+import nextwatchImg from '../assets/nextwatch.webp';
 
 const Projects = () => {
   const projects = [
@@ -82,7 +82,7 @@ const Projects = () => {
           <div key={i} className="rounded-lg bg-white/5 border border-white/10 flex flex-col overflow-hidden hover:shadow-2xl hover:border-white/20 transition-all duration-300 ease-out h-full group">
             {p.link ? (
               <a className="block cursor-pointer overflow-hidden relative" href={p.link} target="_blank" rel="noreferrer">
-                <img alt={p.title} className="h-48 w-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src={p.image} />
+                <img alt={p.title} loading="lazy" decoding="async" width={1024} height={1024} className="h-48 w-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src={p.image} />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="bg-white text-black px-4 py-2 rounded-full font-bold text-sm flex items-center gap-2">
                     View Project <ExternalLink className="w-4 h-4" />
@@ -91,7 +91,7 @@ const Projects = () => {
               </a>
             ) : (
               <div className="block overflow-hidden relative">
-                <img alt={p.title} className="h-48 w-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src={p.image} />
+                <img alt={p.title} loading="lazy" decoding="async" width={1024} height={1024} className="h-48 w-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src={p.image} />
               </div>
             )}
             
