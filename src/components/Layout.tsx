@@ -66,7 +66,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <span>© {new Date().getFullYear()} Sachin Parashar</span>
         <div className="flex flex-wrap justify-center gap-4 uppercase">
           <a href="https://github.com/SACHIN0280" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-white transition-colors"><SiGithub className="w-3.5 h-3.5" />GitHub</a>
-          <a href="https://linkedin.com/in/sachin-parashar-94499b137" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-white transition-colors"><FaLinkedin className="w-3.5 h-3.5" />LinkedIn</a>
+          <a href="https://linkedin.com/in/sachin-parashar01" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-white transition-colors"><FaLinkedin className="w-3.5 h-3.5" />LinkedIn</a>
           <a href="mailto:s.parashar2806@gmail.com" className="inline-flex items-center gap-1.5 hover:text-white transition-colors"><SiGmail className="w-3.5 h-3.5" />Email</a>
         </div>
       </footer>

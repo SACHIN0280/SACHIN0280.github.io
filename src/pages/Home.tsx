@@ -117,7 +117,7 @@ const Home = () => {
           <a href="https://github.com/SACHIN0280" target="_blank" rel="noreferrer" className="btn">
             <SiGithub className="w-4 h-4 mr-2 text-white" /> GitHub
           </a>
-          <a href="https://linkedin.com/in/sachin-parashar-94499b137" target="_blank" rel="noreferrer" className="btn">
+          <a href="https://linkedin.com/in/sachin-parashar01" target="_blank" rel="noreferrer" className="btn">
             <FaLinkedin className="w-4 h-4 mr-2 text-[#0A66C2]" /> LinkedIn
           </a>
           <a href={`mailto:${EMAIL}`} className="btn">

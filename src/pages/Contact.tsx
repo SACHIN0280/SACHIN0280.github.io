@@ -12,7 +12,7 @@ const Contact = () => {
         <a href="mailto:s.parashar2806@gmail.com" className="btn justify-start">
           <SiGmail className="w-4 h-4 mr-4 text-[#EA4335]" /> s.parashar2806@gmail.com
         </a>
-        <a href="https://linkedin.com/in/sachin-parashar-94499b137" target="_blank" rel="noreferrer" className="btn justify-start">
+        <a href="https://linkedin.com/in/sachin-parashar01" target="_blank" rel="noreferrer" className="btn justify-start">
           <FaLinkedin className="w-4 h-4 mr-4 text-[#0A66C2]" /> LinkedIn
         </a>
         <a href="https://github.com/SACHIN0280" target="_blank" rel="noreferrer" className="btn justify-start">
