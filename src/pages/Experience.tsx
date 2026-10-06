@@ -20,7 +20,7 @@ interface ExperienceItem {
 
 const work: ExperienceItem[] = [
   {
-    title: 'Software Developer',
+    title: 'Software Developer Intern',
     org: 'Clinicals',
     period: 'Sep 2026 – Present',
     summary:

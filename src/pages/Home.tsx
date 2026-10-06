@@ -45,7 +45,7 @@ const Home = () => {
         </span>
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight uppercase font-doto">Sachin Parashar</h1>
         <p className="text-xs sm:text-sm uppercase tracking-[0.1em] text-muted-foreground max-w-xl leading-relaxed">
-          Software developer shipping production apps by day. I also build AI backends, LLM tools and intelligent SaaS.
+          Software developer intern shipping production apps by day. I also build AI backends, LLM tools and intelligent SaaS.
         </p>
 
         <Link
@@ -57,7 +57,7 @@ const Home = () => {
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
           </span>
           <span className="text-muted-foreground">
-            Currently <span className="text-white">Software Developer @ Clinicals</span>
+            Currently <span className="text-white">Software Developer Intern @ Clinicals</span>
           </span>
           <ArrowRight className="w-3 h-3 text-muted-foreground" />
         </Link>
@@ -77,7 +77,7 @@ const Home = () => {
             I'm Sachin, an <strong className="text-white">AI & ML undergraduate</strong> at AKGEC, Ghaziabad, now in my final year. I learn by building, and I care about code that works in production, not just in notebooks.
           </p>
           <p>
-            At <strong className="text-white">Clinicals</strong> I build and ship the apps the company runs on. That covers the team's CRM, onboarding, payments and analytics app, and a mentors app I built from scratch. Both are released to Android and the web from a single React codebase backed by Supabase.
+            As a software developer intern at <strong className="text-white">Clinicals</strong>, I build and ship the apps the company runs on. That covers the team's CRM, onboarding, payments and analytics app, and a mentors app I built from scratch. Both are released to Android and the web from a single React codebase backed by Supabase.
           </p>
           <p>
             Outside work I build with LLMs: RAG assistants, an ATS resume optimizer, a sales intelligence platform and a movie recommender. I also lead the <strong className="text-white">NOVA-ML</strong> multi-agent research project.
